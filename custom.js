@@ -51,11 +51,11 @@ $('.owl-carousel').owlCarousel({
     
   }
   $('.dropdown1').on("click", function(event){
-    event.preventDefault();
+    //event.preventDefault();
     console.log(this);
-    //console.log($(this).hasClass('active') == false);
+    console.log($(this).hasClass('active') == false);
     if($(this).hasClass('active')==false){
-      //console.log($(this).find(".menu-list3"));
+      console.log($(this).find(".menu-list3"));
       $('.dropdown1.active').not(this).each(function(){
         console.log($(this).find(".dropdown-menu"));
         $(this).find(".menu-list3").toggle("slow");
